@@ -93,7 +93,7 @@
                                 <select name="gender_id" class="form-control" required>
                                    <option value="" selected disabled>Select Gender</option>
                                    @foreach ($genders as $gender)
-                                       <option value="{{ $gender->id }}" {{ $teachers->gender_id == $gender->id ? 'selected' : '' }}>{{ $gender->name }}</option>
+                                       <option value="{{ $gender->id }}" {{ $teachers->gender_id == $gender->id ? 'selected' : ''  }}>{{ $gender->name }}</option>
                                    @endforeach
                                 </select>
                                 <span class="help-block with-errors"></span>
